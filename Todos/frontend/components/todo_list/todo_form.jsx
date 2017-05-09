@@ -6,7 +6,8 @@ class TodoForm extends React.Component {
     super(props);
     this.state = {
       title: "",
-      body: ""
+      body: "",
+      done: false
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);

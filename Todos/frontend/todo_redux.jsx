@@ -6,7 +6,7 @@ import { receiveTodo, receiveTodos } from './actions/todo_actions';
 import Root from './components/root';
 
 window.store = Store;
-window.allTodos = allTodos(window.store.getState());
+window.allTodos = () => allTodos(window.store.getState());
 window.receiveTodo = receiveTodo;
 window.receiveTodos = receiveTodos;
 
